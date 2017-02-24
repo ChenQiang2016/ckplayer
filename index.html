@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="a1"></div>
+<script type="text/javascript" src="ckplayer/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var flashvars={
+        f:'rtmp://live.qiangchen.me/AppName/StreamName',
+        c:0
+    };
+    var video=['http://live.qiangchen.me/AppName/StreamName.m3u8'];
+    CKobject.embed('ckplayer/ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',false,flashvars,video);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="liveDiv"></div>
+<script type="text/javascript" src="ckplayer/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script>
+
+        var ckplay_url = 'http://live.qiangchen.me/AppName/StreamName.m3u8';
+        var f_url = "rtmp"+ckplay_url.substring(4,ckplay_url.length - 5);
+        var flashvars={
+            f:f_url,
+            c:0
+        };
+        var video=[ckplay_url];
+        CKobject.embed('ckplayer/ckplayer/ckplayer.swf','liveDiv','ckplayer_liveDiv','100%','100%',false,flashvars,video);
+
+</script>
+</body>
+</html>
